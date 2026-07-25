@@ -16,6 +16,11 @@ Open `index.html` in a browser, then type a shop name such as:
 
 The chatbot will show the shop location and step-by-step directions from the selected starting point.
 
+After directions are shown, visitors can answer whether they found the shop:
+
+- `Yes` replies with a thank-you message.
+- `No` tells them to get help from the nearest information counter or mall staff.
+
 ## Adding Destination Pictures
 
 Put image files in the project folder, for example inside an `images` folder. Then edit `script.js` and add the image path to a shop:

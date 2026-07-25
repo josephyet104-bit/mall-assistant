@@ -306,7 +306,39 @@ function addResultCard(shop) {
     list.append(item);
   });
 
-  card.append(top, photo, directionTitle, list);
+  const feedback = document.createElement("div");
+  feedback.className = "find-feedback";
+
+  const feedbackQuestion = document.createElement("p");
+  feedbackQuestion.textContent = "Can you find the shop?";
+
+  const feedbackActions = document.createElement("div");
+  feedbackActions.className = "find-feedback-actions";
+
+  const yesButton = document.createElement("button");
+  yesButton.type = "button";
+  yesButton.textContent = "Yes";
+  yesButton.addEventListener("click", () => {
+    feedback.remove();
+    addMessage("Thank you. Enjoy your visit!", "bot");
+  });
+
+  const noButton = document.createElement("button");
+  noButton.type = "button";
+  noButton.textContent = "No";
+  noButton.className = "secondary";
+  noButton.addEventListener("click", () => {
+    feedback.remove();
+    addMessage(
+      "No worries. Please go to the nearest information counter or ask mall staff for help.",
+      "bot"
+    );
+  });
+
+  feedbackActions.append(yesButton, noButton);
+  feedback.append(feedbackQuestion, feedbackActions);
+
+  card.append(top, photo, directionTitle, list, feedback);
   chatLog.append(card);
   chatLog.scrollTop = chatLog.scrollHeight;
 }
