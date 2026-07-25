@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunway Pyramid Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="phone-frame" aria-label="Sunway Pyramid mall finding chatbot">
+        <header class="app-header">
+          <div>
+            <p class="eyebrow">QR entrance guide</p>
+            <h1>Sunway Pyramid Guide</h1>
+            <p class="header-copy">Type a shop name and get simple directions.</p>
+          </div>
+          <div class="scan-badge" aria-label="Opened from QR scan">QR</div>
+        </header>
+
+        <section class="location-strip" aria-label="Starting location">
+          <label for="start-point">Starting point</label>
+          <select id="start-point">
+            <option value="main">Main Entrance</option>
+            <option value="pillarA">Pillar A - Central Concourse</option>
+            <option value="info">Information Counter</option>
+          </select>
+        </section>
+
+        <section id="chat-log" class="chat-log" aria-live="polite"></section>
+
+        <section class="quick-shops" aria-label="Quick shop suggestions">
+          <button type="button" data-shop="Adidas">Adidas</button>
+          <button type="button" data-shop="Uniqlo">Uniqlo</button>
+          <button type="button" data-shop="Starbucks">Starbucks</button>
+          <button type="button" data-shop="TGV Cinemas">TGV</button>
+        </section>
+
+        <form id="chat-form" class="chat-form">
+          <label class="sr-only" for="shop-input">Shop name</label>
+          <input id="shop-input" type="text" autocomplete="off" placeholder="Type shop name..." />
+          <button type="submit">Go</button>
+        </form>
+      </section>
+
+      <aside class="project-note" aria-label="Project notes">
+        <h2>How it will work</h2>
+        <p>
+          Place a QR code at the main entrance or mall pillars. When visitors scan it,
+          this browser chatbot opens and uses that QR location as the starting point.
+        </p>
+        <div class="qr-card" aria-hidden="true">
+          <div class="fake-qr">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            <strong>Scan to find shops</strong>
+            <p>Works directly in a mobile browser.</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
