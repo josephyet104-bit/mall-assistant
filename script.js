@@ -63,7 +63,7 @@ const shops = [
     floor: "Level G",
     zone: "Cafe Zone",
     landmark: "near the main entrance walkway",
-    image: "",
+    image: "images/starbuck.jpg",
     directions: {
       main: [
         "Start at the Main Entrance.",
@@ -122,7 +122,7 @@ const shops = [
     floor: "Level LG1",
     zone: "Health and Beauty Zone",
     landmark: "near the pharmacy and beauty stores",
-    image: "",
+    image: "images/watsons.jpg",
     directions: {
       main: [
         "Start at the Main Entrance.",
@@ -152,7 +152,7 @@ const shops = [
     floor: "Level 1",
     zone: "Books and Lifestyle Zone",
     landmark: "near the learning and lifestyle shops",
-    image: "",
+    image: "images/popular.jpg",
     directions: {
       main: [
         "Start at the Main Entrance.",
@@ -181,7 +181,7 @@ const shops = [
     floor: "Level LG2",
     zone: "Sports Zone",
     landmark: "near the sportswear section",
-    image: "",
+    image: "images/nike.jpg",
     directions: {
       main: [
         "Start at the Main Entrance.",
@@ -209,7 +209,7 @@ const shops = [
     floor: "Level G",
     zone: "Beauty Zone",
     landmark: "near the beauty retail area",
-    image: "",
+    image: "images/sephora.jpg",
     directions: {
       main: [
         "Start at the Main Entrance.",
